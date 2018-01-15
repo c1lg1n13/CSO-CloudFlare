@@ -8,8 +8,9 @@ Aginiz bir DNS degisikligi ile bir web sitesi veya mobil uygulama icin kullanila
 
 Version: 1.0
 
-<em>Use:</em>
+<em>Kullanım:</em>
 <strong>ruby cso-cloudflare.rb -h yada --help </strong><br />
 <strong>ruby cso-cloudflare.rb -b hedef site </strong> <br />
 or<br />
 <strong>ruby cso-cloudflare.rb --byp hedef site </strong><br />
+<strong> Yardim icin "./cso-cloudflare.rb --help" yazip enter tusuna basiniz.</strong><br />
