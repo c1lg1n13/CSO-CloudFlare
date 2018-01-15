@@ -81,8 +81,8 @@ else
 	ip_real = IPSocket.getaddress (options[:bypass])
 
 	puts "[+] Site analizi: #{option} "
-	puts "[+] CloudFlare IP #{ip_real} "
-	puts "[+] Gercek IP #{regex}"
+	puts "[+] CloudFlare IP: #{ip_real} "
+	puts "[+] Gercek IP: #{regex}"
 	target = "http://ipinfo.io/#{regex}/json"
 	url = URI(target).read
 	json = JSON.parse(url)
