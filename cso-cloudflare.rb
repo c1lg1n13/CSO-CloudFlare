@@ -35,7 +35,7 @@ end
 options = {:bypass => nil, :massbypass => nil}
 parser = OptionParser.new do|opts|
 
-    opts.banner = "Ornek: ruby cso-cloudflare.rb -b <hedef site> or ruby cso-cloudflare.rb --byp <hedef site>"
+    opts.banner = "Ornek: ruby cso-cloudflare.rb -b <hedef site> yada ruby cso-cloudflare.rb --byp <hedef site>"
     opts.on('-b ','--byp ', 'Gercek IP adresini keşfedin (CloudFlare korumasini bypass edin.)', String)do |bypass|
     options[:bypass]=bypass;
     end
@@ -48,7 +48,7 @@ parser = OptionParser.new do|opts|
     opts.on('-h', '--help', 'Help') do
         banner()
         puts opts
-        puts "Ornek: ruby cso-cloudflare.rb -b csduragi.com or ruby cso-cloudflare.rb --byp csduragi.com"
+        puts "Ornek: ruby cso-cloudflare.rb -b csduragi.com yada ruby cso-cloudflare.rb --byp csduragi.com"
         exit
     end
 end
@@ -60,6 +60,7 @@ banner()
 
 if options[:bypass].nil?
     puts "-b hedef site yada --byp"
+	puts "Ornek: ruby cso-cloudflare.rb -b csduragi.com yada ruby cso-cloudflare.rb --byp csduragi.com"
 else
 	option = options[:bypass]
 	payload = URI ("http://www.crimeflare.org/cgi-bin/cfsearch.cgi")
